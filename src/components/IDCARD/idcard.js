@@ -8,49 +8,32 @@ export function IdCard({
   birth,
   picture,
 }) {
-  const daysOfWeek = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-  ];
-  const dayOfWeekNumber = birth.getDay();
-  const dayOfWeekName = daysOfWeek[dayOfWeekNumber];
-
-  const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ];
-  const monthNumber = birth.getMonth();
-  const monthName = months[monthNumber];
-
   return (
     <div className={style.pai}>
       <img src={picture} />
-      <table>
-        <p>Frist Name: {firstName}</p>
-        <p>Last Name: {lastName}</p>
-        <p>Gender: {gender}</p>
-        <p>Heigth: {height}m</p>
+      <div className={style.tables}>
+        <p>
+          <strong>Frist Name:</strong> {firstName}
+        </p>
 
         <p>
-          Birth: {dayOfWeekName} {monthName} {birth.getDate()}{' '}
-          {birth.getFullYear()}
+          <strong>Last Name:</strong> {lastName}
         </p>
-      </table>
+
+        <p>
+          <strong>Gender:</strong> {gender}
+        </p>
+
+        <p>
+          <strong>Heigth: </strong>
+          {height}m
+        </p>
+
+        <p>
+          <strong>Birth: </strong>
+          {birth.toDateString()}
+        </p>
+      </div>
     </div>
   );
 }
