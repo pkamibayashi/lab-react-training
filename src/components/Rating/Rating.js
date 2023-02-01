@@ -1,6 +1,6 @@
 import style from '../Rating/style.module.css';
 export function Rating({ children }) {
-  let rating = Math.floor(children);
+  let rating = Math.round(children);
   let stars = '';
 
   for (let i = 0; i < 5; i++) {

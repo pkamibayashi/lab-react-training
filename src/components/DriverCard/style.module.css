@@ -1,0 +1,29 @@
+.father {
+  display: flex;
+  height: 30%;
+  border-radius: 0.6rem;
+  flex-direction: row;
+  width: 50rem;
+  height: 8rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+
+  justify-content: center;
+  background-color: rgb(117, 84, 236);
+  color: white;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.childOne > img {
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+}
+
+.childTwo {
+  line-height: 0;
+  font-size: 1rem;
+  word-spacing: 0.6rem;
+}
