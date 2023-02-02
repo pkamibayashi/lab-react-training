@@ -5,6 +5,7 @@ import { CreditCard } from './components/CreditCard/CreditCard.js';
 import { Rating } from './components/Rating/Rating.js';
 import { DriverCard } from './components/DriverCard/DriverCard.js';
 import { LikeButton } from './components/LikeButton/LikeButton.js';
+import { ClickablePicture } from './components/ClickablePicture/ClickablePicture.js';
 import './cssGeral.css';
 
 function App() {
@@ -95,6 +96,7 @@ function App() {
         />
       </div>
       <LikeButton />
+      <ClickablePicture />
     </div>
   );
 }
